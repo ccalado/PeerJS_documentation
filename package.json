@@ -31,7 +31,7 @@
 		"@docusaurus/theme-common": "^2.2.0",
 		"@tsconfig/docusaurus": "^1.0.5",
 		"docusaurus-plugin-typedoc-api": "^2.5.1",
-		"prettier": "^2.8.4",
+		"prettier": "^3.0.0",
 		"typedoc": "^0.24.0",
 		"typescript": "^5.0.0"
 	},
