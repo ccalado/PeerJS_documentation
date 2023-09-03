@@ -1,0 +1,47 @@
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import KnownDifferences from "./_KnownDifferences.mdx";
+
+Starting with version **1.5**, PeerJS supports [CBOR](https://cbor.io/) encoding for messages. Have a look at [this page](overview.mdx) for a comparison of the different serializers.
+
+CBOR:
+
+- supports [Streams](../Streams.mdx)
+- is an official IETF standard ([RFC 8949](https://www.rfc-editor.org/rfc/rfc8949))
+- is much faster than both JSON and BinaryPack
+- is highly extensible (custom types can be defined)
+- supports chunking of large messages
+- is supported by all major browsers
+
+As the encoding/decoding behaviour is sometimes subtly different from the default BinaryPack encoding, it is opt-in.
+
+<Tabs>
+<TabItem value="import" label={"NPM"}>
+
+```ts
+import { CborPeer } from "peerjs";
+
+const peer = new CborPeer();
+```
+
+</TabItem>
+<TabItem value="classic" label={"Global"}>
+
+```ts
+const { Cbor } = await import(
+	"https://cdn.jsdelivr.net/npm/peerjs@1.5.0/dist/serializer.cbor.mjs"
+);
+
+const peer = new Peer({
+	serializers: { Cbor, default: Cbor },
+});
+```
+
+</TabItem>
+</Tabs>
+
+### Custom types
+
+...
+
+<KnownDifferences />

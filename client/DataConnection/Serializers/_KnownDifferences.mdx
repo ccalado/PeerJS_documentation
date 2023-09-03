@@ -1,0 +1,12 @@
+### Known differences of serializers:
+
+| Type             | JSON             | BinaryPack       | MessagePack      | CBOR             |
+| ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
+| `number`         | `number`         | `number`         | `number`         | `number`         |
+| `string`         | `string`         | `string`         | `string`         | `string`         |
+| `Array`          | `Array`          | `Array`          | `Array`          | `Array`          |
+| `{ key: value }` | `{ key: value }` | `{ key: value }` | `{ key: value }` | `{ key: value }` |
+| `Date`           | `string`         | `string`         | `string`         | `Date`           |
+| `ArrayBuffer`    | _not supported_  | `ArrayBuffer`    | ?                | `Uint8Array`     |
+| `TypedArray`     | _not supported_  | `ArrayBuffer`    | `Uint8Array`     | `TypedArray`     |
+| `TypedArrayView` | _not supported_  | `ArrayBuffer`    | `Uint8Array`     | `TypedArray`     |
