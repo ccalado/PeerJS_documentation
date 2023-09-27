@@ -1924,7 +1924,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/plugin-content-docs@npm:2.4.3, @docusaurus/plugin-content-docs@npm:^2.3.1, @docusaurus/plugin-content-docs@npm:^2.4.0":
+"@docusaurus/plugin-content-docs@npm:2.4.3, @docusaurus/plugin-content-docs@npm:^2.3.1, @docusaurus/plugin-content-docs@npm:^2.4.3":
   version: 2.4.3
   resolution: "@docusaurus/plugin-content-docs@npm:2.4.3"
   dependencies:
@@ -2188,7 +2188,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/types@npm:2.4.3, @docusaurus/types@npm:^2.4.0":
+"@docusaurus/types@npm:2.4.3, @docusaurus/types@npm:^2.4.3":
   version: 2.4.3
   resolution: "@docusaurus/types@npm:2.4.3"
   dependencies:
@@ -2234,7 +2234,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/utils@npm:2.4.3, @docusaurus/utils@npm:^2.4.0":
+"@docusaurus/utils@npm:2.4.3, @docusaurus/utils@npm:^2.4.3":
   version: 2.4.3
   resolution: "@docusaurus/utils@npm:2.4.3"
   dependencies:
@@ -3089,10 +3089,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vscode/codicons@npm:^0.0.32":
-  version: 0.0.32
-  resolution: "@vscode/codicons@npm:0.0.32"
-  checksum: 712f423becae23591397ccc44ca9056eb413d1e00e6b2cad88895b3d97368ecee0a73da51dc40c0c65e7bc5fef2b3db5544a809c21806c6db85c9308c782814e
+"@vscode/codicons@npm:^0.0.33":
+  version: 0.0.33
+  resolution: "@vscode/codicons@npm:0.0.33"
+  checksum: b9933aaf638fe65d3bbd8e7bbbe0c1bd16faca3eb5a94e1cf53f28f347922b2c067bfdcc0046816d3fd3369a01e11a81fdccdef19d4b947f9138f9fbf04c48ac
   languageName: node
   linkType: hard
 
@@ -4912,20 +4912,20 @@ __metadata:
   linkType: hard
 
 "docusaurus-plugin-typedoc-api@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "docusaurus-plugin-typedoc-api@npm:3.0.0"
+  version: 3.0.1
+  resolution: "docusaurus-plugin-typedoc-api@npm:3.0.1"
   dependencies:
-    "@docusaurus/plugin-content-docs": ^2.4.0
-    "@docusaurus/types": ^2.4.0
-    "@docusaurus/utils": ^2.4.0
-    "@vscode/codicons": ^0.0.32
+    "@docusaurus/plugin-content-docs": ^2.4.3
+    "@docusaurus/types": ^2.4.3
+    "@docusaurus/utils": ^2.4.3
+    "@vscode/codicons": ^0.0.33
     marked: ^4.3.0
-    typedoc: ^0.23.28
+    typedoc: 0.25.0
   peerDependencies:
     "@docusaurus/core": ^2.0.0
     react: ">=16.0.0"
     typescript: ^4.0.0 || ^5.0.0
-  checksum: f4e16ae6f9669e1d00f6227fd7d1ce5a843e298512aa19849fe63e1a08e61d42e2a154aee0db20f92948929fcee6fdcbde117322be24ada220c79ddae8bbd14b
+  checksum: b0ffeb82056faf90be18ec5ff7df6152a90b5e68f65f1838ee7d839dd8d4d181df9ac76e695034111d18a663c0f889e072bf0e39fc5fab599072313a25c0eca0
   languageName: node
   linkType: hard
 
@@ -7281,7 +7281,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^4.2.12, marked@npm:^4.3.0":
+"marked@npm:^4.3.0":
   version: 4.3.0
   resolution: "marked@npm:4.3.0"
   bin:
@@ -7478,15 +7478,6 @@ __metadata:
   dependencies:
     brace-expansion: ^1.1.7
   checksum: c154e566406683e7bcb746e000b84d74465b3a832c45d59912b9b55cd50dee66e5c4b1e5566dba26154040e51672f9aa450a9aef0c97cfc7336b78b7afb9540a
-  languageName: node
-  linkType: hard
-
-"minimatch@npm:^7.1.3":
-  version: 7.4.6
-  resolution: "minimatch@npm:7.4.6"
-  dependencies:
-    brace-expansion: ^2.0.1
-  checksum: 1a6c8d22618df9d2a88aabeef1de5622eb7b558e9f8010be791cb6b0fa6e102d39b11c28d75b855a1e377b12edc7db8ff12a99c20353441caa6a05e78deb5da9
   languageName: node
   linkType: hard
 
@@ -10383,19 +10374,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedoc@npm:^0.23.28":
-  version: 0.23.28
-  resolution: "typedoc@npm:0.23.28"
+"typedoc@npm:0.25.0":
+  version: 0.25.0
+  resolution: "typedoc@npm:0.25.0"
   dependencies:
     lunr: ^2.3.9
-    marked: ^4.2.12
-    minimatch: ^7.1.3
+    marked: ^4.3.0
+    minimatch: ^9.0.3
     shiki: ^0.14.1
   peerDependencies:
-    typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x
+    typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x || 5.2.x
   bin:
     typedoc: bin/typedoc
-  checksum: 40eb4e207aac1b734e09400cf03f543642cc7b11000895198dd5a0d3166315759ccf4ac30a2915153597c5c186101c72bac2f1fc12b428184a9274d3a0e44c5e
+  checksum: f0c5980017858969f037b136d9f305fa70162be891e7b169a92701cff67e1eed5c33895121265ec7da5b4a19d0042e649c103a6719c2b42736325b22fd85ff6a
   languageName: node
   linkType: hard
 
